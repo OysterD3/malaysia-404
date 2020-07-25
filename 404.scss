@@ -1,0 +1,158 @@
+.m404 {
+
+
+  &-title {
+    text-align: center;
+  }
+
+  &-back a {
+    margin-left: 20px;
+    color: #636363;
+
+    &:active {
+      color: #636363;
+    }
+  }
+
+  &-more {
+    margin-top: 20px;
+    text-align: center;
+
+    a {
+      color: #636363;
+
+      &:active {
+        color: #636363;
+      }
+    }
+  }
+
+
+  &-box {
+    width: 640px;
+    min-height: 210px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 30px;
+    padding: 30px;
+    overflow: auto;
+
+    .child-spinner {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, 50%);
+
+      .spinner {
+        width: 75px;
+        height: 75px;
+        border-radius: 50%;
+        background-color: transparent;
+        border: 4px solid #ababab;
+        border-top: 4px solid #404040;
+        -webkit-animation: 1s spin linear infinite;
+        animation: 1s spin linear infinite;
+      }
+
+      @-webkit-keyframes spin {
+        from {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+      @keyframes spin {
+        from {
+          -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+        }
+        to {
+          -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+        }
+      }
+
+    }
+
+    .child-avatar {
+      float: left;
+      width: 160px;
+      height: 216px;
+      margin-right: 20px;
+    }
+
+    .child-info {
+      float: left;
+      width: 460px;
+      overflow: hidden;
+      font-size: 14px;
+      color: #5a5a5a;
+
+      &__name {
+        font-size: 18px;
+
+        .gender {
+          font-weight: normal;
+        }
+      }
+
+      &__more-info {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .m404 {
+    &-wrapper {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      margin: 0 auto;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .m404 {
+
+    &-back {
+      text-align: center;
+      a {
+        margin-left: 0;
+        color: #636363;
+
+        &:active {
+          color: #636363;
+        }
+      }
+    }
+    &-box {
+      width: auto;
+      min-height: auto;
+      border-radius: 0;
+
+      .child-avatar {
+        text-align: center;
+        float: none;
+        width: auto;
+        height: auto;
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+body {
+  background-color: #E6E6E6
+}
+
+html, * {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
