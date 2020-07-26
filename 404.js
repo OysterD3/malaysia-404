@@ -5,7 +5,7 @@ function doCORSRequest(id, printResult) {
     document.querySelector("body > div > div > div.m404-box > div > div.child-info").style.display = "none";
     document.querySelector("body > div > div > div.m404-box > div > div.child-spinner").style.display = "block";
     var x = new XMLHttpRequest();
-    x.open("GET", 'http://cors-anywhere.herokuapp.com/http://knk2hilang.rmp.gov.my/MissingPerson/NewTrail?id=' + id);
+    x.open("GET", location.protocol + '//cors-anywhere.herokuapp.com/http://knk2hilang.rmp.gov.my/MissingPerson/NewTrail?id=' + id);
     x.onload = x.onerror = function () {
         printResult(x.responseText || "");
     };
