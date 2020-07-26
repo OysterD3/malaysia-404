@@ -27,6 +27,28 @@
     }
   }
 
+  &-github {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #636363;
+      text-decoration: none;
+
+      &:active {
+        color: #636363;
+      }
+
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+
 
   &-box {
     width: 640px;
@@ -101,7 +123,21 @@
       }
 
       &__more-info {
-        margin-top: 15px;
+        margin-top: 20px;
+
+        a {
+          background-color: #41B883;
+          color: white;
+          text-align: center;
+          padding: 10px 16px;
+          text-decoration: none;
+          display: inline-block;
+          border-radius: 6px;
+        }
+
+        a:hover {
+          background-color: #349268;
+        }
       }
     }
   }
@@ -124,6 +160,7 @@
 
     &-back {
       text-align: center;
+
       a {
         margin-left: 0;
         color: #636363;
@@ -133,6 +170,7 @@
         }
       }
     }
+
     &-box {
       width: auto;
       min-height: auto;
