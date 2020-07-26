@@ -1,10 +1,12 @@
 # Malaysia 404
+[Example page](https://oysterd3.github.io/malaysia-404/)
 
 Malaysia 404 is a javascript to display missing kids in Malaysia.
 
 Inspired by [Notfound.org](https://notfound.org/) and [公益 404](https://www.qq.com/404/)
 
 I am getting all the data from [Portal Rasmi Kanak-Kanak Hilang](https://knk2hilang.rmp.gov.my/Home/Main), using [CORS Anywhere](https://cors-anywhere.herokuapp.com/) to bypass CORS.
+
 
 ## How to use
 
