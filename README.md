@@ -24,4 +24,6 @@ Copy below javascript to your 404 page
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 ## Disclaimer
-I do NOT own any data of the missing kids. All rights reserved by [Polis Diraja Malaysia](https://knk2hilang.rmp.gov.my/) 
+I do NOT own any data of the missing kids. The data is available publicly from [Portal Rasmi Kanak-Kanak Hilang](https://knk2hilang.rmp.gov.my/).
+
+The project is not for commercial use and objective is to help community.
